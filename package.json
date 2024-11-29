@@ -1,0 +1,36 @@
+{
+  "node": ">=20.17.0",
+  "name": "swift-api",
+  "version": "1.0.0",
+  "description": "Api handler for swift.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\"",
+    "fmt": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint . --ext .ts",
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "news",
+    "shorts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wantedbear007/swift-api.git"
+  },
+  "author": "wantedbear007",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "eslint": "^9.15.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.7.2"
+  }
+}
