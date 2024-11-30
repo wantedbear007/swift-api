@@ -41,3 +41,18 @@ export async function down(knex: Knex): Promise<void> {
     .dropTableIfExists("unsummarized")
     .dropTableIfExists("summarized");
 }
+
+
+// import type { Knex } from "knex";
+
+// export async function up(knex: Knex): Promise<void> {
+//   return knex.schema.table("unsummarized", (table) => {
+//     knex.raw('ALTER TABLE "unsummarized" DROP CONSTRAINT IF EIXISTS "unsummarized_source_link_check"');
+//   });
+// }
+
+// export async function down(knex: Knex): Promise<void> {
+//   return knex.schema
+//     .dropTableIfExists("unsummarized")
+//     .dropTableIfExists("summarized");
+// }

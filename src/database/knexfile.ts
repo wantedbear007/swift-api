@@ -1,27 +1,26 @@
 import type { Knex } from "knex";
-import {knexSnakeCaseMappers} from "objection";
-// Update with your config settings.
+import { knexSnakeCaseMappers } from "objection";
 
 const config: { [key: string]: Knex.Config } = {
   development: {
-    client: 'postgresql',
+    client: "postgresql",
     connection: {
-      host: '127.0.0.1',
+      host: "127.0.0.1",
       port: 54320,
-      database: 'swift-test',
-      user:     'postgres',
-      password: 'postgres'
+      database: "basictest",
+      user: "postgres",
+      password: "postgres",
     },
     pool: {
       min: 2,
-      max: 10
+      max: 10,
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: "knex_migrations",
     },
-    // seeds: {
-    //   directory: "./seeds"
-    // },
+    seeds: {
+      directory: "./seeds",
+    },
     // ...knexSnakeCaseMappers
   },
 
@@ -30,15 +29,15 @@ const config: { [key: string]: Knex.Config } = {
     connection: {
       database: "my_db",
       user: "username",
-      password: "password"
+      password: "password",
     },
     pool: {
       min: 2,
-      max: 10
+      max: 10,
     },
     migrations: {
-      tableName: "knex_migrations"
-    }
+      tableName: "knex_migrations",
+    },
   },
 
   production: {
@@ -46,19 +45,17 @@ const config: { [key: string]: Knex.Config } = {
     connection: {
       database: "my_db",
       user: "username",
-      password: "password"
+      password: "password",
     },
     pool: {
       min: 2,
-      max: 10
+      max: 10,
     },
     migrations: {
-      tableName: "knex_migrations"
-    }
-    ,
-    ...knexSnakeCaseMappers
-  }
-
+      tableName: "knex_migrations",
+    },
+    ...knexSnakeCaseMappers,
+  },
 };
 
-module.exports = config;
+export default config;
