@@ -1,6 +1,10 @@
 import type { Knex } from "knex";
 import { knexSnakeCaseMappers } from "objection";
 
+
+/**
+ * config for database paired with knex.
+ */
 const config: { [key: string]: Knex.Config } = {
   development: {
     client: "postgresql",
@@ -21,6 +25,12 @@ const config: { [key: string]: Knex.Config } = {
     seeds: {
       directory: "./seeds",
     },
+    log: {
+      warn(message) {console.log(message)},
+      error(message) {console.log(message)},
+      deprecate(message) {console.log(message)},
+      debug(message) {console.log(message)},
+    },
     // ...knexSnakeCaseMappers
   },
 
@@ -38,6 +48,7 @@ const config: { [key: string]: Knex.Config } = {
     migrations: {
       tableName: "knex_migrations",
     },
+    ...knexSnakeCaseMappers
   },
 
   production: {

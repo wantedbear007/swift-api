@@ -1,10 +1,10 @@
 import { Model } from "objection";
 import { UNSUMMARIZED_TABLE_NAME } from "../../utils/constants";
 
-export default class Unsummarized extends Model {
-    /**
-   * get table name.
+  /**
+   * model for summarized table on the db.
    */
+export default class Unsummarized extends Model {
   static get tableName() {
     return UNSUMMARIZED_TABLE_NAME;
   }
