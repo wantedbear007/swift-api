@@ -1,0 +1,15 @@
+2024-12-01 08:33:36 [INFO]: abc
+2024-12-01 08:33:44 [INFO]: abc
+2024-12-01 08:33:58 [INFO]: abc
+2024-12-01 08:33:58 [ERROR]: sfsd
+2024-12-01 08:34:08 [INFO]: abc
+2024-12-01 08:34:23 [INFO]: abc
+2024-12-01 08:34:28 [INFO]: [server]: Server is running at http://localhost:3000
+2024-12-01 08:34:29 [INFO]: [server]: Server is running at http://localhost:3000
+2024-12-01 08:34:38 [INFO]: [server]: Server is running at http://localhost:3000
+2024-12-01 08:34:55 [INFO]: Database connection successful!
+2024-12-01 08:34:55 [INFO]: [server]: Server is running at http://localhost:3000
+2024-12-01 08:35:01 [INFO]: Database connection successful!
+2024-12-01 08:35:01 [INFO]: [server]: Server is running at http://localhost:3000
+2024-12-01 08:35:12 [INFO]: Database connection successful!
+2024-12-01 08:35:12 [INFO]: [server]: Server is running at http://localhost:3000
